@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Book__Adda | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index-style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  	<div class="container-fluid">
+  		<div class="col-md-12 col-sm-12 navbar navbar-inverse navbar-static-top" role="navigation">
+
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" rel="home" href="index.html" style="margin-right: 25px;"><strong>Book__Adda</strong></a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="books.html">Buy Books</a></li>
+          <li><a href="books.html">Sell Books</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#signup-modal">New User Register </a></li>
+          <li>
+          <form class="navbar-form" role="search">
+            <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+              <div class="input-group-btn">
+                   <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+            </div>
+          </form>
+      	  </li>
+          <li><a href="#" data-toggle="modal" data-target="#login-modal"><img src="images/login.png">Login</a></li>          
+          <li><a href="cart.html"><img src="images/cart.png">Cart</a></li>          
+          </ul>
+  
+
+        
+          
+        
+      </div>
+    </div>
+
+    <!--Signin Modal Begins Here-->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Login to Your Account</h1><br>
+          <form>
+          <input type="text" name="user" placeholder="Username">
+          <input type="password" name="pass" placeholder="Password">
+          <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+          </form>
+          
+          <div class="login-help">
+          <a href="#">Register</a> - <a href="#">Forgot Password</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--Signin Modal Ends Here-->
+
+      <!--Signin Modal Begins Here-->
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Register for more option</h1><br>
+          <form name="formname" method="post" action="#" onsubmit="return checkblank();">
+            <input type="text" id="fname" name="fname" placeholder="Enter Your First Name">
+            <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name">
+            <input type="text" id="user" name="user" placeholder="Enter Your Username">
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile">
+            <input type="password" id="pass" name="pass" placeholder="Choose Password">
+            <input type="submit" id="signup" name="signup" class="signup loginmodal-submit" value="Sign up">
+          </form>
+      </div>
+      </div>
+      <!--Signin Modal Ends Here-->
+    
+  	</div>
+    
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide container-fluid" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/first-slide.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Search.</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">View Books</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/second-slide.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Buy.</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Buy now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/third-slide.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Sell.</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sell Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <!--Beginning of About Us -->
+    <div class="container-fluid" id="about">
+    	<div class="jumbotron">
+    		<h1>About Us</h1>
+    		<p>
+    			
+    		</p>
+    	</div>
+    </div>
+    <!--End of About Us-->
+
+    <!--Beginning of Boxes-->
+      <!-- BOXES -->
+  <section id="boxes" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h3 class="text-primary">Be Better</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, explicabo?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <h3>Be Smarter</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, explicabo?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center border-primary">
+            <div class="card-body">
+              <h3 class="text-primary">Be Faster</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, explicabo?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center bg-primary text-white">
+            <div class="card-body">
+              <h3>Be Stronger</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, explicabo?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Of Boxes-->
+
+  <!-- ABOUT / WHY SECTION -->
+  <section id="about" class="py-5 text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">Why This Book?</h1>
+            <p class="lead pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem beatae, ipsam nemo vitae excepturi hic.</p>
+          </div>
+
+          <!-- ACCORDION -->
+          <div id="accordion" role="tablist">
+            <div class="card">
+              <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Get Inspired
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse1" class="collapse show">
+                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odio hic ipsa enim numquam illum ducimus ea dignissimos, eveniet qui nulla officia quas explicabo beatae commodi fugiat at mollitia, laudantium sint incidunt cum ullam nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ea aperiam autem in laudantium repellendus, impedit distinctio iure ab deleniti.</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="heading2">
+                <h5 class="mb-0">
+                  <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Gain The Knowledge
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse2" class="collapse">
+                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odio hic ipsa enim numquam illum ducimus ea dignissimos, eveniet qui nulla officia quas explicabo beatae commodi fugiat at mollitia, laudantium sint incidunt cum ullam nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quis minima. Assumenda blanditiis omnis sed beatae at facilis quos et!</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="heading3">
+                <h5 class="mb-0">
+                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Open Your Mind
+                  </div>
+                </h5>
+              </div>
+
+              <div id="collapse3" class="collapse">
+                <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odio hic ipsa enim numquam illum ducimus ea dignissimos, eveniet qui nulla officia quas explicabo beatae commodi fugiat at mollitia, laudantium sint incidunt cum ullam nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, quis minima. Assumenda blanditiis omnis sed beatae at facilis quos et!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  	</section>
+  	<!--End of About / Why Section-->
+
+  	<!-- AUTHORS -->
+  <section id="authors" class="my-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">Meet The Authors</h1>
+            <p class="lead pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem beatae, ipsam nemo vitae excepturi hic.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Susan Williams</h3>
+              <h5 class="text-muted">Lead Writer</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet hic in itaque ullam, quod similique?</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Grace Smith</h3>
+              <h5 class="text-muted">Co-Writer</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet hic in itaque ullam, quod similique?</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>John Doe</h3>
+              <h5 class="text-muted">Editor</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet hic in itaque ullam, quod similique?</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
+              <h3>Kevin Swanson</h3>
+              <h5 class="text-muted">Designer</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet hic in itaque ullam, quod similique?</p>
+              <div class="d-flex flex-row justify-content-center">
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="p-4">
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  	</section>
+  	<!--End of ABout the authors-->
+    
+
+     <footer id="main-footer" class="py-5 bg-primary text-white">
+    	<div class="container">
+      		<div class="row">
+        		
+        			<p class="pull-right"><a href="#">Back to top</a></p>
+        			<p>Copyright &copy; 2018 Book__Adda &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        		
+      		</div>
+    	</div>
+ 	  </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
